@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" verbose="1">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="TBC Suite">
+		<classes>
+			<class name="com.ch.tbc.suite.ShopTiresTest" />
+
+		</classes>
+	</test>
+</suite>

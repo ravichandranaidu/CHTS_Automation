@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="TBC Suite">
+    <classes>
+      <class name="com.ch.tbc.suite.ShopTiresTest"/>
+    </classes>
+  </test> <!-- TBC Suite -->
+  <test name="TBC Suite(failed)">
+    <classes>
+      <class name="com.ch.tbc.suite.ShopTiresTest">
+        <methods>
+          <include name="testQuitDriver"/>
+          <include name="testShopTiresBySize"/>
+        </methods>
+      </class> <!-- com.ch.tbc.suite.ShopTiresTest -->
+    </classes>
+  </test> <!-- TBC Suite(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
