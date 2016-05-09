@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite" verbose="1">
+
+	<!-- <listeners> -->
+	<!-- <listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+	<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+	<!-- </listeners> -->
+
+	<test name="OCC Demo Suite">
+		<classes>
+			<class name="com.ch.occ.tests.CreateAccount" />
+			<class name="com.ch.occ.tests.LoginAndLogout" />
+			<class name="com.ch.occ.tests.ShopCartAndCheckOut">
+			<methods>
+				<include name = "shopProductsTest"/>
+				<include name = "addToCartAndCheckoutTest"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
